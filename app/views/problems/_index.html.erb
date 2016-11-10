@@ -1,0 +1,10 @@
+<div class="prob-before">
+				<p>
+				  <% @problems.each do |problem| %>
+				    <tr>
+				      <td><%= problem.text %></td>
+				      <td><%= link_to 'Show', Problem_path(problem) %></td>
+				      <% end %>
+				    </tr>
+				</p>
+			</div>
