@@ -14,10 +14,9 @@ class ProblemsController < ApplicationController
   		redirect_to @problem
 	end
 
-	def show 
-		@problem = Problem.find(params[:id])	
+	def show
+		@problem = Problem.all
 	end
-
 	def edit
 	end
 
@@ -27,11 +26,19 @@ class ProblemsController < ApplicationController
 	def today
 	end
 
-	def newstep
+	def step1
 		@problem = Problem.new
 		@problems = Problem.all
 	end
 
+	def step2
+	end
+	def step3
+	end
+
+	def calender
+	end
+	
 	def aboutus
 	end
 	def settings

@@ -5,11 +5,19 @@
 	</head>
 	<body>
 		<div class="container">
-		<div class="prob-after">	
-		<button type="button" class="btn">Now</button>
-		
+			<div class="description">
+				<h1>Step 3. Let's set the due-date to make answers of problems!</h1>
+				<h2>If you click 'now' You have to write the solution right now</h2>
+				<h2>If you click 'After' You can set the due-date</h2>
+				
+			<div class="prob-after">	
+				<button type="button" class="btn">Now</button>
+				<button type="button" class="btn">After</button>
+				<br>
+				<br>
+				<%= link_to 'Finish',today_problems_path, class: "btn" %>
 
-		</div>
-	
+			</div>
+			
+				
 	</body>
-</html>
