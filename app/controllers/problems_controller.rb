@@ -11,7 +11,10 @@ class ProblemsController < ApplicationController
 	def create
 		@problem = Problem.new(problem_params)
 		@problem.save
-  		redirect_to @problem
+
+		respond_to do |format|
+			format.js
+		end
 	end
 
 	def show

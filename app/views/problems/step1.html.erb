@@ -1,35 +1,28 @@
-<!DOCTYPE html>
-<html>
-	<head>
-	</head>
-	<body>
-		<div class="container">
-			<div class="description">
-				<h1>Step1.</h1>
-				<h2>Fill the form below with your concern whatever it is.</h2>
+<div class="container">
+	<div class="description">
+		<h1>Step1.</h1>
+		<h2>Fill the form below with your concern whatever it is.</h2>
 
-				<h2>Then Hit the "Add" button</h2>
+		<h2>Then Hit the "Add" button</h2>
 
-				<h2>If you added all, Hit "Create Problem"  </h2>
-			</div>
+		<h2>If you added all, Hit "Create Problem"  </h2>
+	</div>
 
-			<div class="form">
-			<%= form_for(@problem) do |f| %>
-			  <p>
-			    <%= f.label :content %><br>
-			    <%= f.text_area :content, size: "50x10" %>
-			  </p>
-			 
-			  <p>
-			    <%= f.submit %>
-			  </p>
-			  <% end %>
-			
-		</div>	
-			<%= render 'index' %>
+	<div class="form">
+		<%= form_for(@problem) do |f| %>
+			<p>
+			<%= f.label :content %><br>
+			<%= f.text_area :content, size: "50x10" %>
+			</p>
 
-				<%= link_to "Next" , step2_problems_path, class: "btn" %>
-				
-			</div>
-	</body>
-</html>
+			<p>
+			<%= f.submit %>
+			</p>
+		<% end %>
+	</div>
+
+
+
+	<%= render 'index' %>
+	<%= link_to "Next" , step2_problems_path, class: "btn" %>	
+</div>

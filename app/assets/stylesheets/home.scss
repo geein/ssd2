@@ -5,12 +5,20 @@
 /*zooming
 	<meta name="viewport" content="width=device-width, initial-scale=1"> */
 
+.body{
+	border-top: 20px;
+	background-image : url("http://blog.hostbaby.com/wp-content/uploads/2014/03/SeeingSpots_1920x1234.jpg");
+}
+
 .col-sm-4{
 	background-color: white;
-	font:
+	font-family:
 	color: black;
 	margin: 20px 0 20px 0;
 	padding: 20px;
 }
 
-.
+.img1{
+	width: 50%;
+	height: 300px;
+}	
